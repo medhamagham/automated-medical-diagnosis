@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Diagnosis Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Medical Diagnosis Prediction</h1>
+        <h4 class="text-center">Enter the following details for prediction:</h4>
+        <form method="POST">
+            <div class="form-group">
+                <label for="fever">Fever (Yes/No):</label>
+                <input type="text" class="form-control" id="fever" name="fever" required>
+            </div>
+            <div class="form-group">
+                <label for="cough">Cough (Yes/No):</label>
+                <input type="text" class="form-control" id="cough" name="cough" required>
+            </div>
+            <div class="form-group">
+                <label for="fatigue">Fatigue (Yes/No):</label>
+                <input type="text" class="form-control" id="fatigue" name="fatigue" required>
+            </div>
+            <div class="form-group">
+                <label for="difficulty_breathing">Difficulty Breathing (Yes/No):</label>
+                <input type="text" class="form-control" id="difficulty_breathing" name="difficulty_breathing" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" class="form-control" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender (Male/Female):</label>
+                <input type="text" class="form-control" id="gender" name="gender" required>
+            </div>
+            <div class="form-group">
+                <label for="blood_pressure">Blood Pressure (Normal/High/Low):</label>
+                <input type="text" class="form-control" id="blood_pressure" name="blood_pressure" required>
+            </div>
+            <div class="form-group">
+                <label for="cholesterol_level">Cholesterol Level (Low/Normal/High):</label>
+                <input type="text" class="form-control" id="cholesterol_level" name="cholesterol_level" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
